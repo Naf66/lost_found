@@ -1,0 +1,516 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.014);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  position: relative;
+  transition: 0.3s;
+}
+.nav a:hover {
+  color: #00f2ff;
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.671);
+  background: rgba(0, 0, 0, 0.74);
+  border-bottom: 2px solid #00f2ff;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.full {
+  flex: 1;
+}
+body {
+  margin: 0;
+  background: url("files/img1.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 2/1;
+  margin: 2%;
+  padding: 10px;
+  backdrop-filter: blur(8px);
+}
+.intro:hover {
+  background-color: rgba(0, 0, 0, 0.222);
+  border: groove #000000;
+  transform: translateY(-10px);
+  transition: 0.5s;
+  border-radius: 20px;
+  text-shadow: 0 0 8px rgba(187, 0, 255, 0.671);
+}
+.p1 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+}
+.p2 {
+  font-size: 25px;
+}
+.panel {
+  display: flex;
+  background: white;
+}
+.logpanel {
+  width: 500px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  aspect-ratio: 2/1;
+  margin: 2%;
+  padding: 10px;
+  backdrop-filter: blur(8px);
+}
+
+.logpanel:hover {
+  background-color: rgba(0, 0, 0, 0.222);
+  border: groove #000000;
+  transform: translateY(-10px);
+  transition: 0.5s;
+  border-radius: 20px;
+  text-shadow: 0 0 8px rgba(187, 0, 255, 0.671);
+}
+.p3 {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.dec {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.fdec {
+  width: 200px;
+  aspect-ratio: 3/2;
+  text-align: cneter;
+  color: white;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.fdec:hover {
+  background-color: rgba(0, 0, 0, 0.222);
+  border: groove #000000;
+  transform: translateY(-10px);
+  transition: 0.5s;
+  border-radius: 20px;
+  text-shadow: 0 0 8px rgba(187, 0, 255, 0.671);
+}
+.reg {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  position: relative;
+  transition: 0.3s;
+  border: groove #000000;
+}
+.reg:hover {
+  color: #00f2ff;
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.671);
+  background: rgba(0, 0, 0, 0.74);
+  border-bottom: 2px solid #00f2ff;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+.fdec p {
+  font-size: 20px;
+}
+
+.formgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.cell {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+.form-content:hover {
+  background-color: rgba(0, 0, 0, 0.222);
+  border: groove #000000;
+  transform: translateY(-10px) scale(1.02);
+  transition: 1s;
+  border-radius: 20px;
+  text-shadow: 0 0 8px rgba(187, 0, 255, 0.671);
+}
+.form-content {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  width: 500px;
+  color: white;
+  padding: 10px;
+  backdrop-filter: blur(8px);
+}
+.p4 {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+}
+.p5 {
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgba(101, 122, 239, 0.704);
+  cursor: pointer;
+  border-radius: 8px;
+}
+.submit {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+}
+.p6 {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.p6 a {
+  color: #359dff;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+}
+.login-content {
+  width: 350px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  aspect-ratio: 1/1;
+  border: groove;
+}
+.login-form {
+  padding: 20px;
+}
+button {
+  font-size: 23px;
+  color: white;
+  font-weight: 500;
+  background-color: rgba(101, 122, 239, 0.704);
+  cursor: pointer;
+  border-radius: 8px;
+}
+.login-content:hover {
+  background-color: rgba(0, 0, 0, 0.222);
+  border: groove #000000;
+  transform: translateY(-10px) scale(1.02);
+  transition: 1s;
+  border-radius: 20px;
+  text-shadow: 0 0 8px rgba(187, 0, 255, 0.671);
+}
+.footer {
+  display: flex;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, 0.108);
+  backdrop-filter: blur(10px);
+  color: white;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-shadow: 0 0 4px #000000;
+}
+
+.table {
+  width: 90%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center;
+}
+
+.table th {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.table tr:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+  position: absolute;
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 2px solid #00f2ff;
+
+  box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+}
+
+.user-name {
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.5);
+}
+
+.posts-title {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+.posts-container {
+  width: 90%;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.post-card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.4s;
+}
+
+.post-card:hover {
+  transform: translateY(-10px) scale(1.02);
+
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.post-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 20px;
+  color: white;
+}
+
+.status {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.description {
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.lost {
+  color: #ff4d4d;
+}
+
+.found {
+  color: #00ff88;
+}
+
+.post-actions {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.edit-btn {
+  background: #359dff;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  transform: translateY(-3px);
+
+  background: #0077ff;
+}
+
+.delete-btn {
+  background: #ff3b3b;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  transform: translateY(-3px);
+
+  background: #ff0000;
+}
+
+.post-date {
+  margin-top: 15px;
+
+  font-size: 14px;
+
+  opacity: 0.8;
+}
+
+.empty-posts {
+  width: 100%;
+
+  text-align: center;
+
+  color: white;
+
+  padding: 50px;
+}
+.edit-image {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.image-container {
+  width: 100%;
+  height: 280px;
+
+  overflow: hidden;
+
+  background: black;
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.4s;
+}
+
+.post-card:hover .post-image {
+  transform: scale(1.05);
+}
+
+.post-user {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 15px;
+}
+
+.mini-profile {
+  width: 45px;
+
+  height: 45px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 2px solid #00f2ff;
+}
+
+.poster-name {
+  margin: 0;
+
+  font-size: 17px;
+
+  font-weight: bold;
+}
+
+.post-date {
+  margin: 0;
+
+  font-size: 13px;
+
+  opacity: 0.7;
+}
+
+.user-details {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.description {
+  margin-top: 15px;
+
+  line-height: 1.5;
+
+  height: 70px;
+
+  overflow: hidden;
+}
