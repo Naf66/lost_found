@@ -6,6 +6,14 @@ if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
 }
+$user_id = $_SESSION['user_id'];
+
+$sql = "SELECT * FROM student_data WHERE id='$user_id'";
+$result = mysqli_query($conn, $sql);
+
+$row = mysqli_fetch_assoc($result);
+
+
 
 if (isset($_POST['submit'])) {
 
@@ -75,15 +83,12 @@ if (isset($_POST['submit'])) {
 
             <a href="logout.php">Logout</a>
 
-            <div class="user-info">
-
-                <span class="user-name">
-                    <?php echo $_SESSION['name']; ?>
-                </span>
-
-                <img src="uploads/default.png" class="profile-pic">
-
-            </div>
+             <div class="user-info">
+        <?php echo $_SESSION['name']; ?>
+        <span class="user-name">
+          <img src="<?php echo $row['profile_pic']; ?>" class="profile-pic">
+        </span>
+      </div>
 
         </div>
 
