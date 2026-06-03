@@ -247,3 +247,27 @@ GitHub: https://github.com/Naf66
 ## 📄 License
 
 This project was developed for educational purposes.
+
+## 📸 Screenshots
+
+### 🏠 Landing Page
+
+![Landing Page](screenshots/Home.png)
+
+---
+
+### 📋 Browse Posts
+
+![Browse Posts](screenshots/posts.png)
+
+---
+
+### ➕ Create Post
+
+![Create Post](screenshots/createPost.png)
+
+---
+
+### 👤 User Dashboard
+
+![Dashboard](screenshots/dashboard.png)
